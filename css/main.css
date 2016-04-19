@@ -113,6 +113,10 @@ textarea {
 .rgba-primary-3 { color: rgba( 15,133,209,1) }
 .rgba-primary-4 { color: rgba(  6,101,162,1) }
 
+html, body {
+  font-family: 'Lato', sans-serif;
+}
+
 header {
   background-image: linear-gradient(rgba( 52,153,219,0.7), rgba( 52,153,219,0.7)), url('../img/pexels-photo.jpg');
   background-size: cover;
@@ -120,10 +124,14 @@ header {
   height: 100vh;
 }
 
+h1 {
+  font-size: 50px;
+}
+
 .hero-text-box {
   position: absolute;
+  text-align: center;
   color: #FFF;
-  width: 1140px;
   top:50%;
   left: 50%;
   transform: translate(-50%,-50%);
