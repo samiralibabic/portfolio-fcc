@@ -113,8 +113,14 @@ textarea {
 .rgba-primary-3 { color: rgba( 15,133,209,1) }
 .rgba-primary-4 { color: rgba(  6,101,162,1) }
 
-html, body {
-  font-family: 'Lato', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: 'Lato', sans-serif !important;
 }
 
 header {
@@ -123,9 +129,30 @@ header {
   background-position: center;
   height: 100vh;
 }
+.navbar,
+.navbar-default {
+  background-color: transparent !important;
+  border: none !important;
+}
+.navbar-nav > li > a:link,
+.navbar-nav > li > a:active {
+  color: white !important;
+  text-transform: uppercase !important;
+}
+.navbar-nav > li > a:hover {
+  color: white !important;
+  text-transform: uppercase !important;
+  border-bottom: 1px solid #0665A2 !important;
+}
 
-h1 {
-  font-size: 50px;
+#main-heading {
+  font-size: 7rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+#main-subheading {
+  font-size: 5rem;
+  font-weight: 300;
 }
 
 .hero-text-box {
