@@ -95,6 +95,24 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+    /* portfolio color palette (Belize Hole)*/
+
+    /* As hex codes */
+
+    .color-primary-0 { color: #3499DB }	/* Main Primary color */
+    .color-primary-1 { color: #85C4ED }
+    .color-primary-2 { color: #58ADE3 }
+    .color-primary-3 { color: #0F85D1 }
+    .color-primary-4 { color: #0665A2 }
+
+    /* As RGBa codes */
+
+    .rgba-primary-0 { color: rgba( 52,153,219,1) }	/* Main Primary color */
+    .rgba-primary-1 { color: rgba(133,196,237,1) }
+    .rgba-primary-2 { color: rgba( 88,173,227,1) }
+    .rgba-primary-3 { color: rgba( 15,133,209,1) }
+    .rgba-primary-4 { color: rgba(  6,101,162,1) }
+
 
 
 
