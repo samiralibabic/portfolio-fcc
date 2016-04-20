@@ -118,13 +118,17 @@ textarea {
   padding: 0;
   box-sizing: border-box;
 }
+.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
 html,
 body {
   font-family: 'Lato', sans-serif !important;
 }
 
 header {
-  background-image: linear-gradient(rgba( 52,153,219,0.7), rgba( 52,153,219,0.7)), url('../img/pexels-photo.jpg');
+  background-image: linear-gradient(rgba( 52,153,219,0.8), rgba( 52,153,219,0.8)), url('../img/pexels-photo.jpg');
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -134,8 +138,11 @@ header {
   background-color: transparent !important;
   border: none !important;
 }
+
 .navbar-nav > li > a:link,
-.navbar-nav > li > a:active {
+.navbar-nav > li > a:active,
+.navbar-nav > li > a:visited,
+.navbar-brand {
   color: white !important;
   text-transform: uppercase !important;
 }
@@ -143,6 +150,17 @@ header {
   color: white !important;
   text-transform: uppercase !important;
   border-bottom: 1px solid #0665A2 !important;
+}
+
+.glyphicon,
+.fa {
+  color: #3499DB;
+}
+.codecademy {
+  height: 2em;
+  color: #3499DB;
+  padding: 0;
+  margin: 0;
 }
 
 #main-heading {
@@ -163,9 +181,6 @@ header {
   left: 50%;
   transform: translate(-50%,-50%);
 }
-
-
-
 
 
 
