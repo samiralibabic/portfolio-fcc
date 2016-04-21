@@ -95,24 +95,21 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-    /* portfolio color palette (Belize Hole)*/
-
-    /* As hex codes */
-
+/* portfolio color palette (Belize Hole)*/
+/* As hex codes */
 .color-primary-0 { color: #3499DB }	/* Main Primary color */
 .color-primary-1 { color: #85C4ED }
 .color-primary-2 { color: #58ADE3 }
 .color-primary-3 { color: #0F85D1 }
 .color-primary-4 { color: #0665A2 }
-
-    /* As RGBa codes */
-
+/* As RGBa codes */
 .rgba-primary-0 { color: rgba( 52,153,219,1) }	/* Main Primary color */
 .rgba-primary-1 { color: rgba(133,196,237,1) }
 .rgba-primary-2 { color: rgba( 88,173,227,1) }
 .rgba-primary-3 { color: rgba( 15,133,209,1) }
 .rgba-primary-4 { color: rgba(  6,101,162,1) }
 
+/* General setup and overrides */
 * {
   margin: 0;
   padding: 0;
@@ -126,32 +123,6 @@ html,
 body {
   font-family: 'Lato', sans-serif !important;
 }
-
-header {
-  background-image: linear-gradient(rgba( 52,153,219,0.8), rgba( 52,153,219,0.8)), url('../img/pexels-photo.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-}
-.navbar,
-.navbar-default {
-  background-color: transparent !important;
-  border: none !important;
-}
-
-.navbar-nav > li > a:link,
-.navbar-nav > li > a:active,
-.navbar-nav > li > a:visited,
-.navbar-brand {
-  color: white !important;
-  text-transform: uppercase !important;
-}
-.navbar-nav > li > a:hover {
-  color: white !important;
-  text-transform: uppercase !important;
-  border-bottom: 1px solid #0665A2 !important;
-}
-
 .glyphicon,
 .fa {
   color: #3499DB;
@@ -163,6 +134,38 @@ header {
   margin: 0;
 }
 
+/* Landing page */
+header {
+  background-image: linear-gradient(rgba( 52,153,219,0.8), rgba( 52,153,219,0.8)), url('../img/pexels-photo.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin-bottom: 5rem;
+}
+.navbar,
+.navbar-default {
+  background-color: transparent !important;
+  border: none !important;
+  padding: 1rem 1rem;
+}
+.navbar-nav > li > a:link,
+.navbar-nav > li > a:active,
+.navbar-nav > li > a:visited,
+.navbar-brand {
+  color: white !important;
+  text-transform: uppercase !important;
+  font-size: 1.2rem;
+}
+.navbar-brand .glyphicon {
+  color: white !important;
+  margin-left: 1rem;
+  font-size: 2rem;
+}
+.navbar-nav > li > a:hover {
+  color: white !important;
+  text-transform: uppercase !important;
+  border-bottom: 1px solid white !important;
+}
 #main-heading {
   font-size: 7rem;
   font-weight: 300;
@@ -171,6 +174,14 @@ header {
 #main-subheading {
   font-size: 5rem;
   font-weight: 300;
+}
+@media (max-width:1024px) {
+  #main-heading {
+    font-size: 5rem;
+  }
+  #main-subheading {
+    font-size: 4rem;
+  }
 }
 
 .hero-text-box {
@@ -181,8 +192,61 @@ header {
   left: 50%;
   transform: translate(-50%,-50%);
 }
+.hero-text-box a {
+  position: relative;
+  top: 100px;
+}
+.hero-text-box .btn,
+.hero-text-box .btn-default,
+.hero-text-box .btn-default:visited,
+.hero-text-box .btn-default:active:hover,
+ .hero-text-box .btn-default:active:focus {
+  color: white;
+  background: none;
+  border: 1px solid;
+}
+.hero-text-box .btn:hover,
+.hero-text-box .btn-default:hover {
+  background-color: #3499DB;
+}
 
+/* Intro section */
+#intro .glyphicon {
+  font-size: 50px;
+  margin: 2rem;
+}
+#intro h3 {
+  margin: 2rem;
+}
+#intro p {
+  padding: 1rem 2rem;
+}
+#intro {
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #e7e7e7;
+}
 
+/* Latest projects */
+#projects {
+  background-color: #f8f8f8;
+  padding: 3rem 0;
+  border-bottom: 1px solid #e7e7e7;
+}
+h3 {
+  padding-bottom: 2rem;
+}
+
+/* Skills */
+#skills {
+  padding: 3rem 0;
+}
+
+/* Contact */
+#contact {
+  color: white;
+  background-color: #3499DB;
+  padding: 3rem 0;
+}
 
 
 /* ==========================================================================
