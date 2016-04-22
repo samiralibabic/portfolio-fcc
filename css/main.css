@@ -96,18 +96,8 @@ textarea {
    ========================================================================== */
 
 /* portfolio color palette (Belize Hole)*/
-/* As hex codes */
 .color-primary-0 { color: #3499DB }	/* Main Primary color */
-.color-primary-1 { color: #85C4ED }
-.color-primary-2 { color: #58ADE3 }
-.color-primary-3 { color: #0F85D1 }
-.color-primary-4 { color: #0665A2 }
-/* As RGBa codes */
 .rgba-primary-0 { color: rgba( 52,153,219,1) }	/* Main Primary color */
-.rgba-primary-1 { color: rgba(133,196,237,1) }
-.rgba-primary-2 { color: rgba( 88,173,227,1) }
-.rgba-primary-3 { color: rgba( 15,133,209,1) }
-.rgba-primary-4 { color: rgba(  6,101,162,1) }
 
 /* General setup and overrides */
 * {
@@ -127,12 +117,6 @@ body {
 .fa {
   color: #3499DB;
 }
-.codecademy {
-  height: 2em;
-  color: #3499DB;
-  padding: 0;
-  margin: 0;
-}
 
 /* Landing page */
 header {
@@ -140,20 +124,24 @@ header {
   background-size: cover;
   background-position: center;
   height: 100vh;
-  margin-bottom: 5rem;
 }
 .navbar,
 .navbar-default {
   background-color: transparent !important;
   border: none !important;
-  padding: 1rem 1rem;
+  padding: 1rem 1rem !important;
 }
 .navbar-nav > li > a:link,
-.navbar-nav > li > a:active,
-.navbar-nav > li > a:visited,
-.navbar-brand {
+.navbar-nav > li > a:visited {
   color: white !important;
   text-transform: uppercase !important;
+  font-size: 1.2rem;
+  border-bottom: 1px solid transparent !important;
+  padding: 0;
+  margin: 15px;
+}
+.navbar-brand {
+  color: white !important;
   font-size: 1.2rem;
 }
 .navbar-brand .glyphicon {
@@ -161,18 +149,26 @@ header {
   margin-left: 1rem;
   font-size: 2rem;
 }
-.navbar-nav > li > a:hover {
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:active {
   color: white !important;
   text-transform: uppercase !important;
   border-bottom: 1px solid white !important;
+  transition: border-bottom 1s;
+  padding: 0;
+  margin: 15px;
+}
+.navbar-scrolled {
+  background-color: #3499DB !important;
+  transition: background-color 0.4s;
 }
 #main-heading {
-  font-size: 7rem;
+  font-size: 8rem;
   font-weight: 300;
   text-transform: uppercase;
 }
 #main-subheading {
-  font-size: 5rem;
+  font-size: 6rem;
   font-weight: 300;
 }
 @media (max-width:1024px) {
@@ -182,6 +178,18 @@ header {
   #main-subheading {
     font-size: 4rem;
   }
+}
+@media (max-width:768px) {
+  #main-subheading {
+    font-size: 3rem;
+  }
+}
+.navbar-default .navbar-toggle:hover {
+    background-color: #3499DB !important;
+    transition: all 0.4s;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white !important;
 }
 
 .hero-text-box {
@@ -204,10 +212,12 @@ header {
   color: white;
   background: none;
   border: 1px solid;
+  transition: all 0.4s;
 }
 .hero-text-box .btn:hover,
 .hero-text-box .btn-default:hover {
   background-color: #3499DB;
+  transition: all 0.4s;
 }
 
 /* Intro section */
@@ -220,8 +230,31 @@ header {
 }
 #intro p {
   padding: 1rem 2rem;
+  font-size: 1.8rem;
+  text-align: center;
+}
+@media (max-width: 1024px) {
+  #intro p {
+    font-size: 1.5rem;
+  }
+  #intro h3 {
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  #intro p {
+font-size: 1.4rem;
+    padding: 10px;
+  }
+}
+@media (max-width: 425px) {
+  #intro .glyphicon {
+    margin: 0;
+  }
 }
 #intro {
+  padding-top: 5rem;
   padding-bottom: 3rem;
   border-bottom: 1px solid #e7e7e7;
 }
@@ -235,10 +268,34 @@ header {
 h3 {
   padding-bottom: 2rem;
 }
+#projects img {
+  object-fit: cover;
+  object-position: top;
+}
 
 /* Skills */
 #skills {
   padding: 3rem 0;
+}
+.fizz {
+  font-size: 6rem;
+  color: #3499DB;
+}
+#skills i {
+  padding: 0 10px;
+}
+#skills p {
+  font-size: 1.8rem;
+}
+@media (max-width: 1024px) {
+  #skills p {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 768px) {
+  #skills p {
+    font-size: 1.4rem;
+  }
 }
 
 /* Contact */
@@ -247,7 +304,36 @@ h3 {
   background-color: #3499DB;
   padding: 3rem 0;
 }
-
+#contact i,
+#contact .glyphicon,
+#contact img {
+  padding: 10px 10px;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+#contact p {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+@media (max-width: 1024px) {
+  #contact p {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 768px) {
+  #contact p {
+    font-size: 1.4rem;
+  }
+}
+#contact .glyphicon,
+#contact .fa {
+  color: white;
+}
+#contact .glyphicon:hover,
+#contact .fa:hover {
+  color: #C9C9C9;
+  transition: all 0.4s;
+}
 
 /* ==========================================================================
    Helper classes
