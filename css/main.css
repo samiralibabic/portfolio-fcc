@@ -120,7 +120,7 @@ body {
 
 /* Landing page */
 header {
-  background-image: linear-gradient(rgba( 52,153,219,0.8), rgba( 52,153,219,0.8)), url('../img/pexels-photo-min.jpg');
+  background-image: linear-gradient(rgba( 52,153,219,0.8), rgba( 52,153,219,0.8)), url('../img/pexels-photo-min-min.jpg');
   background-size: cover;
   background-position: center;
   height: 100vh;
