@@ -17,7 +17,7 @@ $(document).ready(function() {
 
     /* Change menu background on scrolling */
     $(document).scroll(function() {
-        if ($("body").scrollTop() > 100) {
+        if ($(document).scrollTop() > 100) {
             $("nav").addClass("navbar-scrolled");
         } else {
             $("nav").removeClass("navbar-scrolled");
