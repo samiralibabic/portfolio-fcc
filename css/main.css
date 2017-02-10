@@ -124,6 +124,7 @@ header {
   background-size: cover;
   background-position: center;
   height: 100vh;
+  min-height: 500px;
 }
 .navbar,
 .navbar-default {
@@ -161,11 +162,13 @@ header {
 .navbar-scrolled {
   background-color: #3499DB !important;
   transition: background-color 0.4s;
+  box-shadow: 0 0 10px 2px;
 }
 #main-heading {
   font-size: 8rem;
   font-weight: 300;
   text-transform: uppercase;
+  width: 80vw;
 }
 #main-subheading {
   font-size: 6rem;
@@ -187,6 +190,9 @@ header {
 .navbar-default .navbar-toggle:hover {
     background-color: #3499DB !important;
     transition: all 0.4s;
+}
+.navbar-default .navbar-toggle:focus {
+  background-color: #3499DB !important;
 }
 .navbar-default .navbar-toggle .icon-bar {
     background-color: white !important;
@@ -215,7 +221,10 @@ header {
   transition: all 0.4s;
 }
 .hero-text-box .btn:hover,
-.hero-text-box .btn-default:hover {
+.hero-text-box .btn-default:hover,
+.hero-text-box .btn-default:focus {
+  color: white;
+  border-color: white;
   background-color: #3499DB;
   transition: all 0.4s;
 }
