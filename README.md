@@ -1,6 +1,6 @@
 # Portfolio @FreeCodeCamp
 
-Personal webdeveloper portfolio created while taking FreeCodeCamp bootcamp.
+Personal web developer portfolio created while taking FreeCodeCamp bootcamp.
 
 ![screenshot](screenshot.png)
 
